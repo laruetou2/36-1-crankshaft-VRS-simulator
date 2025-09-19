@@ -1,2 +1,3 @@
 # 36-1-crankshaft-VRS-simulator
-This short Arduino sketch was originally coded by smellsofbikes.  Modifications are for the latest (9/2025) Uno R4 Wifi board.
+This short Arduino sketch was originally coded by smellsofbikes.  Modifications are for the latest (9/2025) Uno R4 Wifi board (48mH).
+The original was coded for the original slower Arduino boards that run at 16mH.  There are two direct port writes that are approx. 3 times faster than a "digitalWrite." The latest Uno R4 Wifi board does not support these direct writes and therefore the code has been changed to "digitalWrite".  Since this board runs 3 times faster and the digitalWrite is 3 time slower, seems like it is a fairly even trade - regardless of all the math (which I have not done), the simulation seems to be working well on this newest board.
